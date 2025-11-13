@@ -2,16 +2,150 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>E-Portfolio - Aymane Aber</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Aymane Aber </title>
+    <style>
+        /* Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #e5e5e5; /* gris professionnel */
+            color: #0a2a43; /* bleu foncé pro */
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #0a2a43; /* bleu foncé */
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 { font-size: 1.8rem; }
+        header p { font-size: 0.95rem; opacity: 0.9; }
+
+        /* Section principale */
+        .hero {
+            min-height: 70vh;
+            background: #d4d4d4; /* gris clair */
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 3px solid #0a2a43;
+        }
+
+        .hero h2 { font-size: 2rem; margin-bottom: 10px; color: #0a2a43; }
+        .hero h3 { font-size: 1.2rem; margin-bottom: 15px; }
+        .hero p { max-width: 700px; margin: 0 auto 30px auto; font-size: 1rem; }
+
+        .btn-group {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn {
+            background: white;
+            border: 2px solid #0a2a43;
+            color: #0a2a43;
+            padding: 8px 18px;
+            border-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #0a2a43;
+            color: white;
+        }
+
+        main { max-width: 900px; margin: 0 auto; padding: 30px 15px; }
+
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-left: 6px solid #0a2a43;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            color: #0a2a43;
+            margin-bottom: 12px;
+        }
+
+        section h3 {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: #0a2a43;
+        }
+
+        footer {
+            text-align: center;
+            color: #0a2a43;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
-    <h1 style = "color: rgb(57, 102, 150);" >Aymane Aber -  Production du Portfolio </h1>
-    <p style=" color:rgb(57, 102, 150);  Arial, Helvetica, sans-serif; font-size: 40px;">Sommaire</p>
+<header>
+    <h1>E-Portfolio - Aymane Aber</h1>
+    <p>BTS SIO · Étudiant en informatique</p>
+</header>
 
- 
-    
+<section class="hero" id="accueil">
+    <h2>Bienvenue sur mon e‑portfolio</h2>
+    <h3>Je m'appelle Aymane Aber</h3>
+    <p>
+        Étudiant en première année de BTS SIO au lycée Charles de Foucauld, passionné par l'informatique,
+        le développement et les nouvelles technologies.
+    </p>
+
+    <div class="btn-group">
+        <a href="#veille" class="btn">Veille technologique</a>
+        <a href="#e5" class="btn">Épreuve E5</a>
+        <a href="#parcours" class="btn">Parcours scolaire</a>
+        <a href="#contact" class="btn">Contact</a>
+    </div>
+</section>
+
+<main>
+    <section id="veille">
+        <h2>Veille technologique</h2>
+        <p>Ici apparaîtra ta veille technologique.</p>
+    </section>
+
+    <section id="e5">
+        <h2>Épreuve E5</h2>
+        <p>Section dédiée aux situations professionnelles et à ton dossier E5.</p>
+    </section>
+
+    <section id="parcours">
+        <h2>Parcours scolaire</h2>
+        <p>Ton parcours scolaire sera décrit ici.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email : aymaneaber7@gmail.com</p>
+    </section>
+</main>
+
+<footer>
+    © <span id="year"></span> - Aymane Aber
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
